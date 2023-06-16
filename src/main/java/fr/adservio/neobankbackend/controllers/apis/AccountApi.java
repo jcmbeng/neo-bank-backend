@@ -41,4 +41,8 @@ public interface AccountApi
                                                         @PathVariable(name = "accountStatus") AccountStatus accountStatus);
 
 
+    @GetMapping("/bonjour")
+    String bonjour();
+
+
 }

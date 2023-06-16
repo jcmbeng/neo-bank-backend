@@ -57,4 +57,9 @@ public class AccountController implements AccountApi {
     public ResponseEntity<AccountResponse> changeAccountStatus(Long id, AccountStatus accountStatus) {
         return ResponseEntity.ok(accountService.changeAccountStatus(id, accountStatus));
     }
+
+    @Override
+    public String bonjour() {
+        return "Bonjour les amis comment allez-vous ???";
+    }
 }
